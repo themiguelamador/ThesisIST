@@ -1,0 +1,63 @@
+\hoffset 0in
+\voffset 0in
+
+%Alternative set of page geometry
+%\oddsidemargin 0.71cm
+%\evensidemargin 0.04cm
+%\marginparsep 0in
+%\topmargin -0.25cm
+%\textwidth 15cm
+%\textheight 23.5cm
+
+\usepackage[top=2.5cm, bottom=2.5cm, inner=2.9cm, outer=2.5cm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} 
+%\fancyhead[LE]{\bfseries\nouppercase{\leftmark}}
+%\fancyhead[RO]{\bfseries\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\bfseries\small\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\addtolength{\headheight}{2pt} % make space for the rule
+\fancypagestyle{plain}{% Used in Chapter titles
+   \fancyhead{} % get rid of headers
+   \renewcommand{\headrulewidth}{0pt} % and the line
+   \renewcommand{\footrulewidth}{0pt}
+   \fancyfoot[LE,RO]{\bfseries\small\thepage}
+}
+
+\fancypagestyle{begin}{%
+   \fancyhead{}
+   \renewcommand{\headrulewidth}{0pt}
+   \renewcommand{\footrulewidth}{0pt}
+   \fancyfoot[LE,RO]{\bfseries\small\thepage}
+}
+\fancypagestyle{document}{%
+	\fancyhf{} 
+	\fancyhead[LE]{\bfseries\nouppercase{\leftmark}}
+	\fancyhead[RO]{\bfseries\nouppercase{\rightmark}}
+	\fancyfoot[LE,RO]{\bfseries\small\thepage}
+	%\renewcommand{\headrulewidth}{0pt}
+	%\renewcommand{\footrulewidth}{0pt}
+	\addtolength{\headheight}{2pt} % make space for the rule
+}
+\fancypagestyle{documentsimple}{%
+	\fancyhf{}
+	\fancyfoot[LE,RO]{\bfseries\small\thepage}
+	%\renewcommand{\headrulewidth}{0pt}
+	%\renewcommand{\footrulewidth}{0pt}
+	\addtolength{\headheight}{2pt} % make space for the rule
+}
+\setcounter{secnumdepth} {5}
+\setcounter{tocdepth} {5}
+\renewcommand{\thesubsubsection}{\thesubsection.\Alph{subsubsection}}
+
+\renewcommand{\subfigtopskip}{0.3 cm}
+\renewcommand{\subfigbottomskip}{0.2 cm}
+\renewcommand{\subfigcapskip}{0.3 cm}
+\renewcommand{\subfigcapmargin}{0.2 cm}
+
+\graphicspath{{Figures/}}

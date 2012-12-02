@@ -1,0 +1,153 @@
+\typeout{}
+\typeout{--------------------------------------------------------------}
+\typeout{ +---+ Thesis Template                            }
+\typeout{ +---+      Version 2.0, August 2011                         }
+\typeout{ +---+  for Instituto Superior Tecnico (IST),                 }
+\typeout{ +---+  Universidade Técnica de Lisboa                         }
+\typeout{ * Using Thesis Style form Pedro Tomás                                }
+\typeout{ * Created to write Dissertations                             }
+\typeout{ * Conforms with IST Master Degree format and with most important packages setup        }
+\typeout{ * Should conform with IST PhD Degree format (not verified)   }
+\typeout{                                                              }
+\typeout{ AUTHOR: Miguel Amador and João Marques                                          }
+\typeout{                                                              }
+\typeout{Important: Use all files in the archive, since this is based in all them. Modify dummy files at wish.                                                              }
+\typeout{--------------------------------------------------------------}
+\typeout{}
+
+% Defines an additional alphabet... not required in most cases
+% ------------------------------------------------------------
+% \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+% PACKAGE babel:
+% ---------------
+% The 'babel' package may correct some hyphenisation issues of latex. 
+% However in most situations it is not required.
+\usepackage[english]{babel}
+
+% PACKAGE fontenc:
+% -----------------
+% chooses T1-fonts and allows correct automatic hyphenation.
+%\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+% Package ulem.
+\usepackage{ulem} % Allows the use of other text emphatizer commands
+\normalem %defines \emph{} to italic, instead of underline. 
+\raggedbottom %declaration makes all pages the height of the text on that page. No extra vertical space is added. The \flushbottom declaration makes all text pages the same height, adding extra vertical space when necessary to fill out the page.
+
+% PACKAGE date time:
+% -----------------
+% Lets you alter the format of the date that \today returns.
+\usepackage{datetime}
+\newdateformat{todaythesis}{%
+\monthname[\THEMONTH]  \THEYEAR}
+
+% PACKAGE latexsym:
+% -----------------
+% Defines additional latex symbols. May be required for thesis with many math symbols.
+\usepackage{latexsym}
+
+% PACKAGE amsmath, amsthm, amssymb, amsfonts:
+% -------------------------------------------
+% This package is typically required. Among many other things it adds the possibility
+% to put symbols in bold by using \boldsymbol (not \mathbf); defines additional 
+% fonts and symbols; adds the \eqref command for citing equations. I prefer the style
+% "(x.xx)" for referering to an equation than to use "equation x.xx".
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+
+% PACKAGE multirow, colortbl, longtable:
+% ---------------------------------------
+% These packages are most usefull for advanced tables. The first allows to join rows 
+% throuhg the command \multirow which works similarly with the command \multicolumn
+% The second package allows to color the table (both foreground and background)
+% The third package is only required when tables extend beyond the length of one page;
+% with compatibilities with the tabular environment. The last allow the definitions of landscape pages, allowing the use of a different orientation for wider graphics or tables. See package documentation to see the implementation.
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{supertabular}
+\usepackage{pdflscape}
+% \usepackage{longtable}
+
+% PACKAGE graphics, epsfig, subfigure, caption:
+% ---------------------------------------------
+% Packages for figures... well you will certainly need these packages, with the exception
+% of the 'caption' package. This only allows to define extra caption options.
+% Notice that subfigure allows to place figures within figures with its own caption. It
+% should be avoided to create an eps file with subfigures. That will mean that you won't be 
+% able to reference those subfigures. Instead create an EPS file (the only graphics format supported
+% by latex) for each of the subfigures and then use the command \subfigure (see below).
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage[hang,small,bf]{subfigure}
+%\usepackage[footnotesize,bf,center]{caption}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{multirow}
+
+\usepackage[font=small,labelfont=bf,textfont=normalfont]{caption}
+
+% PACKAGE algorithmic, algorithm
+% ------------------------------
+% These packages are required if you need to describe an algorithm.
+% \usepackage{algorithmic}
+% \usepackage[chapter]{algorithm}
+
+% PACKAGE natbib/cite
+% -------------------
+% The two packages are not compatible, and you should use one of the two. Notice however that the
+% IEEE BiBTeX stylesheet is imcompatible with the natbib package. If using the IEEE format, use the 
+% cite package instead
+\usepackage[square,numbers,sort&compress]{natbib}
+%\usepackage{cite}
+
+% PACKAGE acronyum
+% -----------------
+% This package is most useful for acronyms. The package guarantees that all acronyms definitions are 
+% given at the first usage. IMPORTANT: do not use acronyms in titles/captions; otherwise the definition 
+% will appear on the table of contents.
+\usepackage[printonlyused]{acronym}
+\usepackage[titletoc,title,header]{appendix}
+\usepackage[noauto]{chappg}
+
+% PACKAGE extra_functions VER COMO DEVE SER
+% -----------------
+% My Personal package: defines the following commands:
+% \fancychapter{chaptername) -> Prints a fancier chapter (you can also use the fancychapter package for this)
+% \hline{width} -> use for a replacement of the \hline command
+% \Mark1, \Mark2, \Mark3, ...
+\usepackage{00.extra_functions}
+
+
+% PACKAGE hyperref
+% -----------------
+% Set links for references and citations in document
+% Some MiKTeX distributions have faulty PDF creators in which case this package will not work correctly
+% Long live Linux :D
+\usepackage[plainpages=false]{hyperref}
+\hypersetup{
+             colorlinks=false,
+             citecolor=red,
+             breaklinks=true,
+             bookmarksnumbered=true,
+             bookmarksopen=true,
+             pdftitle={Thesis Title},
+             pdfauthor={Author Name},
+             pdfsubject={Master Thesis in Biomedical Engineering},
+             pdfcreator={Document Creator Name},
+             pdfkeywords={Template, Latex, Thesis}}
+\usepackage{float}
+%\usepackage[final]{00.listofsymbols}
+\usepackage{00.symlist}
+
+% Set paragraph counter to alphanumeric mode
+\renewcommand{\theparagraph}{\Alph{paragraph}~--}
+
+\newcommand{\figref}[1]{Figure \ref{#1}}
+\newcommand{\equationref}[1]{Equation (\ref{#1})}
+\newcommand{\tableref}[1]{Table (\ref{#1})}
+
+\newcommand{\textreg}{$\textsuperscript{\textregistered}$}

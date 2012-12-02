@@ -1,0 +1,38 @@
+% This is required for the fancy chapters
+\dominitoc
+\dominilof
+\dominilot
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of contents
+%\renewcommand{\baselinestretch}{1}
+\pdfbookmark[0]{Index}{index}
+\pdfbookmark[1]{Contents}{toc}
+\tableofcontents
+% \contentsline{chapter}{References}{\pageref{bib}}
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+%\renewcommand{\baselinestretch}{1.5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of figures
+\pdfbookmark[1]{List of Figures}{lof}
+\listoffigures
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of tables
+\pdfbookmark[1]{List of Tables}{lot}
+\listoftables
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % List of algorithms
+% Requires packages algorithmic, algorithm
+% \pdfbookmark[1]{List of Algorithms}{loa}
+% \listofalgorithms
+% \cleardoublepage
