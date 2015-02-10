@@ -3,11 +3,13 @@ ThesisIST
 
 Template de Latex para Tese de Mestrado no Instituto Superior Técnico. Este template não é oficial, tendo sido alvo de diversas adaptações e correcções desde o seu autor original. Aconselha-se portanto a verificação da satisfação de todas as regras indicadas para a redacção deste trabalho académico.
 
-Change Log V1.5 (Versão 10/01/2015):
+Download da última versão - https://github.com/themiguelamador/ThesisIST/releases/tag/V1.5
+
+Change Log V1.5 (Versão 10/01/2015) - https://github.com/themiguelamador/ThesisIST/releases/tag/V1.5:
 - Formatação capa actualizada para regulamento do IST para 2013/2014. Redução para apenas um formato de capa.
 - Mudança de língua do texto da capa para inglês
 
-Change Log V1.4 (Versão 24/05/2012):
+Change Log V1.4 (Versão 24/05/2012) - https://github.com/themiguelamador/ThesisIST/releases/tag/V1.4:
 - Adicionada opção de capa com símbolo do IST e FMUL para o curso de Engenharia Biomédica.
 Nota: Versão normal com unicamente símbolo do IST como predefinido. Cada versão de capa corresponde a uma ficheiro diferente de cover, em 0.Inicio, onde dever ser editado os conteúdos da capa. No tese.tex deve-se seleccionar a capa pretendida deixando o input correcto.
 
