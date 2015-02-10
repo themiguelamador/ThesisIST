@@ -107,3 +107,31 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+*.los
+
+*.mlf1
+
+*.mlf2
+
+*.mlf3
+
+*.mlf4
+
+*.mlt1
+
+*.mlt2
+
+*.mlt3
+
+*.mlt4
+
+*.mtc1
+
+*.mtc2
+
+*.mtc3
+
+*.mtc4
+
+*.mtc5
