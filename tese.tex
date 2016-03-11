@@ -1,11 +1,7 @@
 \documentclass[defaultstyle,10pt,master,Helvetica]{01.thesis}
 %Use 01.thesis_pt instead for PT version 
-%Babel Package language needs to be changed to completly change titles to Portuguese in 00.Definitions/packages.tex)
 %Dummy text if written by default in English. Just changed to whatever you need.
 % Helvetica is a similar font to Arial, with small differences.
-
-%\renewcommand*\familydefault{\sfdefault} %To obtain the default sans serif font with pdflatex
-
 
 %% Packages
 \input{00.Definitions/packages.tex}
@@ -16,24 +12,35 @@
 %-----------------------------------------------------------
 %-----------------------------------------------------------
 \begin{document}
+%% Use Main document Language
+\selectlanguage{english}
+%% ------
 \pagestyle{begin}
 \input{0.Inicio/1.cover.tex} 
 \input{0.Inicio/2.citation.tex}
 \input{0.Inicio/3.Acknowledgments.tex}
+\selectlanguage{english}
 \input{0.Inicio/4.Abstract.tex}
 \input{0.Inicio/5.Keywords.tex}
+\selectlanguage{portuguese}
 \input{0.Inicio/4.Resumo.tex}
 \input{0.Inicio/5.PalavrasChave.tex}
+%% Use Main document Language
+\selectlanguage{english}
+%% ------
 \input{0.Inicio/6.Tables.tex}
 \acresetall
+%% Remain list of table titles are set manualy
 \input{0.Inicio/7.Acronim.tex}
 \input{0.Inicio/8.symbols.tex}
-%\pagestyle{document}%Fancy head and foot with lines
+%% Use Main document Language
+\selectlanguage{english}
+%% Define the title of Chapter Table of Contents
+\mtcsettitle{minitoc}{Contents}
+%% ------
 \pagestyle{documentsimple}%Simple head
 \input{1.Introduction/main.tex}
 \input{2.Chapter/main.tex}
-
-
 \input{99.Conclusions/conclusions.tex}
 \cleardoublepage
 \phantomsection
