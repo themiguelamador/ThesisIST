@@ -3,7 +3,7 @@
 %%
 %% which is made based on class 'report.cls'
 %%
-%% AUTHOR: Pedro Tom·s
+%% AUTHOR: Pedro Tom√°s
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{01.thesis}[2011/08/23]
@@ -15,13 +15,13 @@
 \typeout{ +---+      Version 1.1, July 2007                            }
 \typeout{ +---+      Version 2.0, July 2007 (new IST stylesheet)       }
 \typeout{ +---+  for Instituto Superior Tecnico (IST),                 }
-\typeout{ +---+  Universidade TÈnica de Lisboa                         }
+\typeout{ +---+  Universidade T√©nica de Lisboa                         }
 \typeout{ * Modified from 'report.cls'                                 }
 \typeout{ * Created to write Dissertations                             }
 \typeout{ * Conforms with IST Master Degree format                     }
 \typeout{ * Should conform with IST PhD Degree format (not verified)   }
 \typeout{                                                              }
-\typeout{ AUTHOR: Pedro Tom·s                                          }
+\typeout{ AUTHOR: Pedro Tom√°s                                          }
 \typeout{--------------------------------------------------------------}
 \typeout{}
 
