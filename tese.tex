@@ -45,14 +45,18 @@
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliography}
+%% Use with Cite and Natbib
 \bibliographystyle{IEEEtran}
 \bibliography{02.biblio}
+%% Use with Biblatex (.bib file is set in Packages) (Not working)
+%\printbibliography
+
 \cleardoublepage
 
 \begin{appendices}
 	\begin{appendix}
 		\pagenumbering{bychapter}
-		\input{Appendices/appendixA.tex}   
+		\input{Appendices/appendixA.tex}     
 		\cleardoublepage
 	\end{appendix}
 \end{appendices}

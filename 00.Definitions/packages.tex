@@ -1,7 +1,7 @@
 \typeout{}
 \typeout{--------------------------------------------------------------}
 \typeout{ +---+ Thesis Template                            }
-\typeout{ +---+      Version 2.0, August 2011                         }
+\typeout{ +---+      Version 1.7.8, April 2016                         }
 \typeout{ +---+  for Instituto Superior Tecnico (IST),                 }
 \typeout{ +---+  Universidade Técnica de Lisboa                         }
 \typeout{ * Using Thesis Style from Pedro Tomás                                }
@@ -32,7 +32,8 @@
 %\usepackage[T1]{fontenc}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
-%\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern} %will change font type
 
 % Package ulem.
 \usepackage{ulem} % Allows the use of other text emphatizer commands
@@ -99,13 +100,19 @@
 % \usepackage{algorithmic}
 % \usepackage[chapter]{algorithm}
 
-% PACKAGE natbib/cite
+% PACKAGE natbib/cite/biblatex
 % -------------------
-% The two packages are not compatible, and you should use one of the two. Notice however that the
+% The three packages are not compatible, and you should use one of the two. Notice however that the
 % IEEE BiBTeX stylesheet is imcompatible with the natbib package. If using the IEEE format, use the 
 % cite package instead
+%% Natbib
 \usepackage[square,numbers,sort&compress]{natbib}
+%% Cite
 %\usepackage{cite}
+%% Biblatex (Not working)
+%\usepackage{csquotes}
+%\usepackage[backend=biber,style=authoryear]{biblatex}
+
 
 % PACKAGE acronyum
 % -----------------
